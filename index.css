@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-app {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(5deg, green, yellow);
+}
+
+a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.container {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}

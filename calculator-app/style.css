@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(to bottom, #589cd3 0%, #71b7c03a 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.container {
+  padding: 30px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  position: relative;
+  min-height: 54vh;
+  border-radius: 10px;
+  border: 1px solid gray;
+  min-width: 30vw;
+  background: linear-gradient(#e6646498, #9198e59d);
+  z-index: 1;
+}
+
+.display {
+  width: 100%;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+/* 
+.btns {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "btn-ac btn-del btn-div btn-multi"
+    "btn-sev btn-eight btn-nine btn-plus"
+    "btn-four btn-fiv btn-six btn-min"
+    "btn-one btn-two btn-thr btn-ans"
+    "btn-zero btn-zero btn-dot btn-ans";
+  grid-gap: 10px;
+} */
+
+.btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.btn-zero {
+  /* grid-area: btn-zero; */
+  grid-column: 2/4;
+}
+
+.btn-ans {
+  /* grid-area: btn-ans; */
+  grid-row: 4/6;
+  grid-column: 4/5;
+}
+
+/* .btns > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+} */
+
+.btns > div {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btns > div:hover {
+  background-color: gray;
+  color: white;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  background: rgba(131, 187, 42, 0.647);
+  border-radius: 50%;
+  position: absolute;
+  top: calc(100% - 58px);
+  left: calc((50% - 230px));
+}
